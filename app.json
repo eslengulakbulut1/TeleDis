@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "TeleDis",
+    "slug": "TeleDis",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.teledis.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Bu uygulama hasta muayenesi için fotoğraf çekmenize olanak tanır.",
+        "NSPhotoLibraryUsageDescription": "Bu uygulama galerideki hasta fotoğraflarını seçmenize olanak tanır."
+      }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Uygulamanın fotoğraflarınıza erişmesine izin verilsin mi?",
+          "cameraPermission": "Uygulamanın kameranıza erişmesine izin verilsin mi?"
+        }
+      ]
+    ],
+    "android": {
+      "package": "com.teledis.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e9405fe5-e26b-4fb0-b78f-e019216e6b58"
+      }
+    },
+    "owner": "eslengulakbulut"
+  }
+}
